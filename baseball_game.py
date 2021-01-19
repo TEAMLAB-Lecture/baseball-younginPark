@@ -283,7 +283,7 @@ def main():
     print("Play Baseball")
     user_input = 999
     random_number = str(get_not_duplicated_three_digit_number())
-    print("Random Number is : ", random_number)
+    print("Random Number is :", random_number)
     # ===Modify codes below=============
     # 위의 코드를 포함하여 자유로운 수정이 가능함
     stop = False
@@ -304,7 +304,7 @@ def main():
                     else:
                         print("Wrong Input, Input again")
             else:
-                print("Strikes : " + strikes + " Balls : " + balls)
+                print("Strikes :" , strikes , ",", "Balls :" , balls)
 
         else:
             print("Wrong Input, Input again")
