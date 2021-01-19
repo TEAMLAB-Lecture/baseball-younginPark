@@ -32,10 +32,13 @@ def is_digit(user_input_number):
     # ===Modify codes below=============
     # 조건에 따라 변환되어야 할 결과를 result 변수에 할당
     result = True
-    for i in range(len(user_input_number)):
-        if ord(user_input_number[i]) < 48 and ord(user_input_number[i]) > 57:
-            result = False
-            break
+    if '.' in user_input_number:
+        result = False
+    else:
+        for i in range(len(user_input_number)):
+            if ord(user_input_number[i]) < 48 and ord(user_input_number[i]) > 57:
+                result = False
+                break
     # ==================================
     return result
 
@@ -301,7 +304,7 @@ def main():
                     else:
                         print("Wrong Input, Input again")
             else:
-                print(f"Strikes : {strikes} , Balls : {balls}")
+                print("Strikes : " + strikes + " Balls : " + balls)
 
         else:
             print("Wrong Input, Input again")
