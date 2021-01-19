@@ -289,6 +289,8 @@ def main():
     stop = False
     while stop == False:
         my_number = input("Input guess number : ")
+        if my_number == '0':
+            break
         if is_validated_number(my_number) == True:
             strikes, balls = get_strikes_or_ball(random_number, my_number)
             print("Strikes :" , strikes , ",", "Balls :" , balls)
