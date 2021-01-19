@@ -36,7 +36,7 @@ def is_digit(user_input_number):
         result = False
     else:
         for i in range(len(user_input_number)):
-            if ord(user_input_number[i]) < 48 and ord(user_input_number[i]) > 57:
+            if ord(user_input_number[i]) < 48 or ord(user_input_number[i]) > 57:
                 result = False
                 break
     # ==================================
