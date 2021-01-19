@@ -291,6 +291,7 @@ def main():
         my_number = input("Input guess number : ")
         if is_validated_number(my_number) == True:
             strikes, balls = get_strikes_or_ball(random_number, my_number)
+            print("Strikes :" , strikes , ",", "Balls :" , balls)
             if strikes == 3:
                 while 1:
                     answer = input("You win, one more(Y/N)?")
@@ -303,8 +304,8 @@ def main():
                         break
                     else:
                         print("Wrong Input, Input again")
-            else:
-                print("Strikes :" , strikes , ",", "Balls :" , balls)
+            # else:
+            #     print("Strikes :" , strikes , ",", "Balls :" , balls)
 
         else:
             print("Wrong Input, Input again")
